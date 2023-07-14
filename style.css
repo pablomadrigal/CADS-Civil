@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: #FFE81F;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  background: black;
+}
+
+@font-face {
+   font-family: starWars;
+    src: url('http://wedding.pabloypaloma.site/sfdistantgalaxyaltoutline-i-webfont.woff2') format('woff2'),
+         url('http://wedding.pabloypaloma.site/sfdistantgalaxyaltoutline-i-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+/* Set the animation, color, size and hide the text */
+.intro {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+  animation: intro 6s ease-out 1s;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 300%;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.logo {
+  font-family: starWars;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1600%;
+  opacity: 0%;
+  animation: logo 7s ease-out 9s;
+    text-align: center;
+}
+
+/* Scale the logo down and maintain it centered */
+@keyframes logo {
+  0% {
+    transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
+
+.content {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  text-align: justify;
+  width: 80%;
+  height: 90vh;
+  margin-left: 10%;
+  animation: content 17s forwards;
+  overflow-y: scroll;
+    font-size: 1.9rem;
+}
+
+.crawl {
+    margin-top: 37px;
+    transform: perspective(700px) rotateX(45deg);
+    width: 50%;
+    margin-left: 40%;
+    animation: content 17s forwards;
+    overflow-y: scroll;
+    font-size: 2.5rem;
+}
+
+.crawl h1{
+    margin-top: 900px
+}
+
+.crawl h4{
+    margin-bottom: 1400px
+}
+
+.crawl h3{
+    font-size: 3rem;
+}
+
+
+.anotation {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.stretch {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@keyframes content {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#content {
+  position: absolute;
+  top: 100%;
+}
+
+#title,
+#subtitle {
+  text-align: center;
+}
+
+#cads::-webkit-scrollbar {
+  width: 0px;
+}
+
+#switch {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+    z-index: 5;
+    position: absolute ;
+}
