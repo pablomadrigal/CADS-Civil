@@ -11,8 +11,8 @@ html::-webkit-scrollbar {
 
 @font-face {
    font-family: starWars;
-    src: url('.../CADS-Civil/sfdistantgalaxyaltoutline-i-webfont.woff2') format('woff2'),
-         url('.../CADS-Civil/sfdistantgalaxyaltoutline-i-webfont.woff') format('woff');
+    src: url('../CADS-Civil/sfdistantgalaxyaltoutline-i-webfont.woff2') format('woff2'),
+         url('../CADS-Civil/sfdistantgalaxyaltoutline-i-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
